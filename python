@@ -1,0 +1,20 @@
+__author__ = 'tarunsharma'
+#strings
+
+#defined as below and plus operator concatenates it.
+my_name = "tarun " + 'sharma'
+print my_name
+
+#Indexing strings and selecting string using index
+print my_name[0] + my_name[1:4] + my_name[-1] + my_name[5:]
+# searching from ":" is quite resilient.
+print my_name[:], my_name[0:], ""[0:3]
+
+#finding a position in string.
+pythogoras = "There is geometry in huming of strings there is music in spacing" \
+             " of spheres"
+# gives us the first position of word "string" in the pythogoras and else -1
+# its case sensitive.
+print pythogoras.find("string")
+# So we can use it to print strings.
+print pythogoras[pythogoras.find("string"):]
